@@ -65,7 +65,7 @@ Prefer using `input:sensitivity` over `general:sensitivity` to avoid bugs, espec
 | blur_new_optimizations | whether to enable further optimizations to the blur. Recommended to turn on, as it will massively improve performance, but some people have experienced graphical issues | bool | false |
 | drop_shadow | enable drop shadows on windows | bool | true |
 | shadow_range | Shadow range ("size") in layout px | int | 4 |
-| shadow_render_power | (1 - 4), in what power to render the falloff (more power, the faster the falloff) | int | 3 |
+| shadow_render_power | (>= 0.0), in what power to render the falloff (higher power -> weaker falloff) | float | 0.5 |
 | shadow_ignore_window | if true, the shadow will not be rendered behind the window itself, only around it. | bool | true |
 | col.shadow | shadow's color. Alpha dictates shadow's opacity. | color | 0xee1a1a1a |
 | col.shadow_inactive | inactive shadow color. (if not set, will fall back to col.shadow) | color | unset |
